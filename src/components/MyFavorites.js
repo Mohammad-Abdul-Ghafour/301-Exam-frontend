@@ -37,7 +37,7 @@ class MyFavorites extends React.Component {
         <div style={{display:"flex",width:"90%",justifyContent:"space-evenly",flexWrap:"wrap",marginLeft:"auto",marginRight:"auto"}}>
           {this.state.programData.length > 0 ? this.state.programData.map(element => {
           return (<MyfevCard programData={element} getData={this.getData} />)
-        }) : <p style={{textAlign:"center",backgroundColor:"yellow",fontSize:"20px",fontWeight:"bold"}}>Your List is Empty ¯_(ツ)_/¯</p>}
+        }) : <p style={{textAlign:"center",backgroundColor:"yellow",fontSize:"20px",fontWeight:"bold", width:"100%"}}>Your List is Empty ¯_(ツ)_/¯</p>}
         </div>
         
 
