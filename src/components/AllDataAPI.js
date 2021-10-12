@@ -25,9 +25,12 @@ class AllDataAPI extends Component {
             <div>
                 <h1>All Data from the API</h1>
                 <h3>Select your favorites :)</h3>
-                {this.state.programData.map(element => {
+                <div style={{display:"flex",width:"90%",justifyContent:"space-evenly",flexWrap:"wrap",marginLeft:"auto",marginRight:"auto"}}>
+                    {this.state.programData.map(element => {
                     return(<APICard programData={element} />)
                 }) }
+                </div>
+                
                 
             </div>
         )
